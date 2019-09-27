@@ -1,0 +1,30 @@
+<job id = "vbs">
+	<script language = "VBScript">
+		Set WshShell = WScript.CreateObject("WScript.Shell")
+		settimermin = 0.5
+		counter = settimermin*60
+		WScript.Sleep 5000
+		key1 = "W"
+		key2 = "A"
+		key3 = "S"
+		key4 = "D"
+		keyEnter = "{ENTER}"
+		Do While counter > 0
+			WshShell.SendKeys key1
+			WScript.Sleep 500
+			WshShell.SendKeys key2
+			WshShell.SendKeys keyEnter
+			WScript.Sleep 500
+			WshShell.SendKeys keyEnter
+			WScript.Sleep 500
+			WshShell.SendKeys keyEnter
+			WScript.Sleep 500
+			WshShell.SendKeys keyEnter
+			WScript.Sleep 500
+			WshShell.SendKeys keyEnter
+			WScript.Sleep 500
+			WshShell.SendKeys keyEnter
+			counter = counter - 30
+		Loop
+	</script>
+</job>
